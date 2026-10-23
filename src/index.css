@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── Background & Surface ── */
+    --color-background: 248 250 252;       /* #F8FAFC */
+    --color-surface: 255 255 255;          /* #FFFFFF */
+    --color-border: 226 232 240;           /* #E2E8F0 */
+
+    /* ── Text ── */
+    --color-foreground: 15 23 42;          /* #0F172A */
+    --color-muted: 100 116 139;           /* #64748B */
+
+    /* ── Brand ── */
+    --color-primary: 37 99 235;            /* #2563EB */
+    --color-primary-hover: 29 78 216;      /* #1D4ED8 */
+    --color-primary-light: 219 234 254;    /* #DBEAFE */
+    --color-accent: 14 165 233;            /* #0EA5E9 */
+    --color-accent-light: 224 242 254;     /* #E0F2FE */
+
+    /* ── Status ── */
+    --color-success: 22 163 74;            /* #16A34A */
+    --color-success-light: 220 252 231;    /* #DCFCE7 */
+    --color-warning: 245 158 11;           /* #F59E0B */
+    --color-warning-light: 254 249 195;    /* #FEF9C3 */
+    --color-danger: 220 38 38;             /* #DC2626 */
+    --color-danger-light: 254 226 226;     /* #FEE2E2 */
+
+    /* ── Spacing & Shape ── */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+
+    /* ── Shadows ── */
+    --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.08);
+    --shadow-elevated: 0 4px 12px rgba(15, 23, 42, 0.1);
+    --shadow-dropdown: 0 8px 24px rgba(15, 23, 42, 0.12);
+
+    /* ── Sidebar ── */
+    --sidebar-width: 260px;
+    --sidebar-collapsed-width: 72px;
+
+    /* ── Bottom Tab Bar ── */
+    --tab-bar-height: 64px;
+  }
+
+  * {
+    border-color: rgb(var(--color-border));
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Focus ring ── */
+  *:focus-visible {
+    outline: 2px solid rgb(var(--color-primary));
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* ── Respect reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ── Scrollbar styling ── */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--color-border));
+    border-radius: var(--radius-full);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--color-muted));
+  }
+}
+
+@layer components {
+  /* ── Card base ── */
+  .card {
+    background-color: rgb(var(--color-surface));
+    border: 1px solid rgb(var(--color-border));
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* ── Skeleton loader ── */
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      rgb(var(--color-border) / 0.3) 25%,
+      rgb(var(--color-border) / 0.5) 50%,
+      rgb(var(--color-border) / 0.3) 75%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.5s ease-in-out infinite;
+    border-radius: var(--radius-sm);
+  }
+
+  @keyframes skeleton-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* ── Badge variants ── */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    line-height: 1.5;
+  }
+
+  .badge-success {
+    background-color: rgb(var(--color-success-light));
+    color: rgb(var(--color-success));
+  }
+
+  .badge-warning {
+    background-color: rgb(var(--color-warning-light));
+    color: rgb(var(--color-warning));
+  }
+
+  .badge-danger {
+    background-color: rgb(var(--color-danger-light));
+    color: rgb(var(--color-danger));
+  }
+
+  .badge-primary {
+    background-color: rgb(var(--color-primary-light));
+    color: rgb(var(--color-primary));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

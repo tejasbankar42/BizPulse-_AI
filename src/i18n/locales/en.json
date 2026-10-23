@@ -1,0 +1,121 @@
+{
+  "app": {
+    "name": "BizPulse AI",
+    "tagline": "Your AI-powered business analyst"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "upload": "Upload & Clean",
+    "chat": "Ask Your Data",
+    "insights": "Insights",
+    "actions": "Actions",
+    "reports": "Reports",
+    "evaluation": "Evaluation",
+    "settings": "Settings"
+  },
+  "landing": {
+    "hero_title": "Turn messy bills into clear business decisions",
+    "hero_subtitle": "Upload sales files, get instant insights in English, Hindi or Marathi. AI explains WHY your metrics changed and proposes actions you control.",
+    "try_demo": "Try Demo",
+    "sign_in": "Sign In",
+    "feature_1_title": "Smart Data Cleaning",
+    "feature_1_desc": "Upload CSV, Excel, PDF or even a photo of a bill. Our AI cleans, deduplicates and standardizes everything.",
+    "feature_2_title": "Ask in Your Language",
+    "feature_2_desc": "Type or speak questions in English, Hindi or Marathi. Get charts, tables and plain-language answers.",
+    "feature_3_title": "Human-in-the-Loop Actions",
+    "feature_3_desc": "AI recommends — you decide. Every action needs your approval before anything happens.",
+    "how_it_works": "How It Works",
+    "step_1": "Upload Files",
+    "step_2": "Data Cleaning",
+    "step_3": "Analysis",
+    "step_4": "Insight Generation",
+    "step_5": "Recommendations",
+    "step_6": "Your Approval",
+    "step_7": "Execution"
+  },
+  "auth": {
+    "title": "Welcome to BizPulse AI",
+    "subtitle": "Sign in to manage your business",
+    "google_signin": "Sign in with Google",
+    "demo_mode": "Or try a demo role:",
+    "role_owner": "Owner",
+    "role_staff": "Staff",
+    "role_viewer": "Viewer"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "revenue": "Revenue",
+    "profit_margin": "Profit Margin",
+    "top_product": "Top Product",
+    "stock_alerts": "Stock Alerts",
+    "health_score": "Business Health Score",
+    "sales_trend": "Sales Trend",
+    "top_products": "Top Products",
+    "bottom_products": "Bottom Products",
+    "anomalies": "Anomaly Alerts",
+    "time_saved": "Time Saved",
+    "cost_per_query": "Cost per Query"
+  },
+  "upload": {
+    "title": "Upload & Clean",
+    "drag_drop": "Drag & drop files here",
+    "or_browse": "or click to browse",
+    "supported": "CSV, XLSX, PDF, Image",
+    "pipeline": "Processing Pipeline",
+    "before_after": "Before / After",
+    "cleaning_log": "Cleaning Log",
+    "undo": "Undo"
+  },
+  "chat": {
+    "title": "Ask Your Data",
+    "placeholder": "Ask a question about your business...",
+    "voice_input": "Voice input",
+    "explain": "Explain this answer",
+    "confidence": "Confidence",
+    "sql_used": "SQL Used",
+    "reasoning": "Reasoning Steps",
+    "sources": "Source Tables"
+  },
+  "insights": {
+    "title": "Insights",
+    "forecast": "Forecast",
+    "anomalies": "Anomalies",
+    "profit_leaks": "Profit Leaks"
+  },
+  "actions": {
+    "title": "Actions",
+    "pending": "Pending Approval",
+    "approve": "Approve",
+    "edit": "Edit",
+    "reject": "Reject",
+    "history": "History",
+    "email_preview": "Email Preview",
+    "expected_impact": "Expected Impact",
+    "reason": "Reason"
+  },
+  "reports": {
+    "title": "Reports",
+    "weekly_summary": "Weekly Summary",
+    "download_pdf": "Download PDF"
+  },
+  "settings": {
+    "title": "Settings & Privacy",
+    "language": "Language",
+    "data_masking": "Data Masking",
+    "delete_data": "Delete My Data",
+    "consent": "Consent & Privacy",
+    "audit_log": "Audit Log"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "search": "Search..."
+  }
+}
